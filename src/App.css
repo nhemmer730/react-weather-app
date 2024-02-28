@@ -1,1 +1,11 @@
+.App {
+  max-width: 800px;
+  margin: 30px auto;
+  color: #878787;
+}
 
+.App footer {
+  text-align: center;
+  font-size: 11px;
+  margin: 20px;
+}
