@@ -4,9 +4,6 @@
   margin: 30px auto;
   padding: 16px;
 }
-.Weather form {
-  margin-bottom: 20px;
-}
 
 .Weather h1 {
   color: #878787;
@@ -30,5 +27,16 @@
   font-weight: 500;
   font-size: 56px;
   color: black;
-  margin-top: 26px;
+  margin-left: 5px;
+  margin-top: 18px;
+  line-height: 68px;
+}
+
+.Weather .unit {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  line-height: 1;
+  margin-bottom: 65px;
+  padding: 3px;
 }
