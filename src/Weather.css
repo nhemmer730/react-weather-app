@@ -33,7 +33,7 @@
   font-weight: 400;
 }
 
-.units {
+.WeatherForecast .units {
   color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 300;
