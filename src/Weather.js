@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
-import WeatherForecast from "./WeatherForecast";
+import WeatherIcon from "./WeatherIcon";
 import axios from "axios";
 import "./Weather.css";
 
@@ -12,12 +12,12 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       coordinates: response.data.coordinates,
-      temperature: response.data.temperature.current,
-      humidity: response.data.temperature.humidity,
-      date: new Date(response.time * 1000),
-      description: response.data.condition.description,
-      icon: response.data.icon,
-      wind: response.data.wind.speed,
+      temperature: response.data.temperature,
+      humidity: response.data.humidity,
+      date: new Date(response.data.time * 1000),
+      description: response.data.description,
+      icon_url: `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${props.icon}.png`,
+      wind: response.data.wind,
       city: response.data.city,
     });
   }
@@ -61,7 +61,6 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

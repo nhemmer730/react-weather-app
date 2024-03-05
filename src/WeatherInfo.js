@@ -18,7 +18,7 @@ export default function WeatherInfo(props) {
           <div className="d-flex">
             <div className="float-left">
               <WeatherIcon
-                code={props.data.icon}
+                code={props.data.condition.icon_url}
                 size={56}
               />
             </div>
