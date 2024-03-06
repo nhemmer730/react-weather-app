@@ -6,11 +6,11 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="New York" />
+        <Weather defaultCity="Boston" />
 
         <footer>
           This project is created by{" "}
-          <a href="https://willowy-nasturtium-57d59d.netlify.app">
+          <a href="https://www.linkedin.com/in/nicole-hemmer-40a99834/">
             Nicole Hemmer
           </a>{" "}
           is
