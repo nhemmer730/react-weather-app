@@ -1,5 +1,5 @@
 .Weather {
-  border: 1px solid #418ae9;
+  border: 10px solid #418ae9;
   border-radius: 6px;
   margin: 30px auto;
   padding: 16px;
@@ -13,13 +13,13 @@
 }
 
 .Weather ul {
-  margin: 0;
+  margin: 10px auto;
   padding: 0;
 }
 
 .Weather canvas {
   margin-right: 10px;
-  margin-top: 5px;
+  margin-top: 15px;
   display: inline-block;
 }
 
@@ -33,7 +33,7 @@
 .Weather .temperature {
   font-weight: 700;
   color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 60px;
   line-height: 64px;
   margin-left: 8px;
   font-weight: 400;
@@ -45,5 +45,8 @@
   font-weight: 300;
   position: relative;
   line-height: 1;
-  margin-top: 9px;
+}
+
+.WeatherInfo .description {
+  margin-left: 45px;
 }
